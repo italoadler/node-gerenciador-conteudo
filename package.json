@@ -1,0 +1,10 @@
+{
+  "name": "node-gerenciador-conteudo",
+  "version": "1.0.0",
+  "description": "Gerenciador de conteúdo em Node.js",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "ejs": "^2.6.1"
+  }
+}
