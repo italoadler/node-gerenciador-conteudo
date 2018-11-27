@@ -1,18 +1,13 @@
 var app = require('./config/server')
 
+var rotaHome = require('./app/routes/home');
+rotaHome(app);
 
-app.get('/', function(req, res) {
-    res.render('index', {titulo:'Inicial'});
-});
+var rotaPublicacoes = require('./app/routes/publicacoes');
+rotaPublicacoes(app);
 
-app.get('/publicacoes', function(req, res) {
-    res.render('publicacoes', {titulo:'Publicações'});
-});
-
-app.get('/nova-publicacao', function(req, res) {
-    res.render('nova-publicacao', {titulo:'Nova Publicação'});
-});
-
+var rotaNovaPublicacao = require('./app/routes/nova-publicacao');
+rotaNovaPublicacao(app);
 
 app.listen(3000, function () {
     console.log('Servidor rodando...');
