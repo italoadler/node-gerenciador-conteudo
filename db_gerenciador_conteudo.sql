@@ -8,3 +8,6 @@ create table publicacoes (
     texto text,
     data_criacao timestamp default current_timestamp
 );
+
+insert into publicacoes (titulo, texto) values ('Primeira publicação', 'Texto da primeira publicação.');
+insert into publicacoes (titulo, texto) values ('Segunda publicação', 'Texto da segunda publicação.');
